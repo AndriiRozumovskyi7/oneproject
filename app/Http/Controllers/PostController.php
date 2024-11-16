@@ -24,6 +24,7 @@ class PostController extends Controller
             'description' => 'required',
         ]);
 
+
         $incomingFields['car']=strip_tags($incomingFields['car']);
         $incomingFields['price']=strip_tags($incomingFields['price']);
         $incomingFields['description']=strip_tags($incomingFields['description']);
