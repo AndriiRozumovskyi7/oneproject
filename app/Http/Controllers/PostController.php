@@ -32,6 +32,7 @@ class PostController extends Controller
         return redirect('user-posts');
     }
 
+
 public function showEditScreen(Post $post){
     if (auth()->user()->getAuthIdentifier() !== $post['user_id']) {
         return redirect('/');
